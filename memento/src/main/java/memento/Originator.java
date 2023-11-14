@@ -1,4 +1,4 @@
-package memento.src.main.java.source;
+package memento;
 
 
 
@@ -7,7 +7,7 @@ public class Originator {
       private String state;
 
  
-
+//Ustawienie nowego stanu
   public void setState(String state){
 
      this.state = state;
@@ -15,14 +15,14 @@ public class Originator {
   }
 
  
-
+//Zwrócenie stanu
   public String getState(){
 
      return state;
 
   }
 
- 
+ //Tworzy nowy obiekt klasy Memento, inicjując go aktualnym stanem obiektu Originator 
 
   public Memento saveStateToMemento(){
 
@@ -31,7 +31,7 @@ public class Originator {
   }
 
  
-
+  //Przywrócenie stanu obiektu Originator do stanu przechowywanego w obiekcie Memento.
   public void getStateFromMemento(Memento memento){
 
      state = memento.getState();

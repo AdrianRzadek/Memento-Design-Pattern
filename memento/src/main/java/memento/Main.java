@@ -1,4 +1,4 @@
-package memento.src.main.java.source;
+package memento;
 
 public class Main {
     public static void main(String[] args) {
